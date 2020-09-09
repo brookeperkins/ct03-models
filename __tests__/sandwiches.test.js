@@ -1,6 +1,6 @@
 const fs = require('fs');
-const Sandwich = require('./sandwiches');
-const pool = require('../utils/pool');
+const Sandwich = require('../lib/models/sandwiches');
+const pool = require('../lib/utils/pool');
 
 describe('Sandwich model', () => {
   beforeEach(() => {

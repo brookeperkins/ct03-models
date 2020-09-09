@@ -1,6 +1,6 @@
 const fs = require('fs');
-const Transport = require('./transports');
-const pool = require('../utils/pool');
+const Transport = require('../lib/models/transports');
+const pool = require('../lib/utils/pool');
 
 describe('Transport model', () => {
   beforeEach(() => {

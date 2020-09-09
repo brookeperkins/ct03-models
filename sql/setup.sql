@@ -1,6 +1,7 @@
 DROP TABLE IF EXISTS cats;
 DROP TABLE IF EXISTS transports;
 DROP TABLE IF EXISTS sandwiches;
+DROP TABLE IF EXISTS books;
 
 CREATE TABLE cats (
   id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -21,4 +22,11 @@ CREATE TABLE sandwiches (
   name TEXT NOT NULL,
   layers INT CHECK (layers > 0),
   main_ingredient TEXT
+);
+
+CREATE TABLE books (
+  id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  name TEXT NOT NULL,
+  pages INT CHECK (pages > 0),
+  genre TEXT
 );

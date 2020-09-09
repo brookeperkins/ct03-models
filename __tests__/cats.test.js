@@ -1,6 +1,6 @@
 const fs = require('fs');
-const Cat = require('./cats');
-const pool = require('../utils/pool');
+const Cat = require('../lib/models/cats');
+const pool = require('../lib/utils/pool');
 
 describe('Cat model', () => {
   beforeEach(() => {
