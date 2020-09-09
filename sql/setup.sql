@@ -1,5 +1,6 @@
 DROP TABLE IF EXISTS cats;
 DROP TABLE IF EXISTS transports;
+DROP TABLE IF EXISTS sandwiches;
 
 CREATE TABLE cats (
   id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -15,3 +16,9 @@ CREATE TABLE transports (
   color TEXT
 );
 
+CREATE TABLE sandwiches (
+  id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  name TEXT NOT NULL,
+  layers INT CHECK (layers > 0),
+  main_ingredient TEXT
+);
